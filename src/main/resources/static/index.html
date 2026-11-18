@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de carro</title>
+</head>
+<body>
+    <h1>Adicionar carro:</h1>
+
+    <form action="http://localhost:8080/carro/salvar" method="POST">
+        <label>Modelo: <input type="text" name="modelo" required></label>
+        <label>Ano: <input type="number" name="ano" required></label>
+        <label>Preço: <input type="number" name="preco" required></label>
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <h1>Listar carros:</h1>
+
+    <form action="https://localhost:8080/carro/listarCarros" method="GET">
+        <button type="submit">Listar todos os carros</button>
+    </form>
+
+    <h1>Deletar carro:</h1>
+
+    <form action="http://localhost:8080/carro/deleteCarro" method="POST">
+        <label>Modelo: <input type="text" name="modelo" required></label>
+        <button type="submit">Deletar</button>
+    </form>
+
+    <h1>Atualizar carro:</h1>
+
+    <form action="http://localhost:8080/carro/updateCarro" method="POST">
+        <label>Modelo: <input type="text" name="modelo" required></label>
+        <label>Preço: <input type="number" name="preco" required></label>
+        <button type="submit">Atualizar</button>
+    </form>
+
+</body>
+</html>
